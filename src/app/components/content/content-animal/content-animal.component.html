@@ -1,0 +1,11 @@
+<div class="animal" [class.reverse]="reverseOrder">
+  <div class="animal-img">
+    <img src='{{ "../../../../assets/" + imgSrc }}'/>
+  </div>
+  <div class="animal-text">
+    <h2>{{ title }}</h2>
+    <div class="text-block">
+      <div class="passage" *ngFor="let passage of passages">{{ passage }}</div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,46 @@
+h1 {
+  text-align: center;
+  font-weight: 200;
+}
+
+.all-animals {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+    .full-component {
+      padding: 112px 165px;
+    }
+
+    h1 {
+      font-size: 58px;
+      line-height: 68px;
+      letter-spacing: 0.2577778100967407px;
+      margin: 0 0 103px 0;
+    }
+
+    .all-animals {
+      gap: 75px;
+    }
+}
+
+/* Portrait tablet and down */
+@media (max-width: 767px) {
+    .full-component {
+      padding: 48px 15px;
+    }
+
+    h1 {
+      font-size: 40px;
+      line-height: 53px;
+      letter-spacing: 0.2044444978237152px;
+      margin: 0 0 32px 0;
+    }
+
+    .all-animals {
+      gap: 60px;
+    }
+}
+

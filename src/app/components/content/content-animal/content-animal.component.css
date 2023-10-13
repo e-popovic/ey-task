@@ -1,0 +1,66 @@
+.animal {
+  display: flex;
+  gap: 30px;
+}
+
+.text-block {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.1599999964237213px;
+  font-weight: 200;
+  margin: 0 0 30px 0;
+}
+
+.text-block {
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.08888888359069824px;
+  text-align: left;
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+    .animal {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+
+    .animal.reverse {
+      flex-direction: row-reverse;
+    }
+
+    .text-block {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    h2 {
+      text-align: left;
+    }
+}
+
+/* Portrait tablet and down */
+@media (max-width: 767px) {
+    .animal {
+      flex-direction: column;
+    }
+
+    .animal-text {
+              height: 100%;
+            }
+
+    .animal-img>img {
+      width: 100%;
+    }
+
+    h2 {
+      text-align: center;
+    }
+}

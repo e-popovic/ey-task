@@ -1,0 +1,13 @@
+* {
+  background-color: #F7F7F7;
+}
+
+.header-img, app-content-pet-facts {
+  width: 100%;
+}
+
+.header-img {
+  min-height: 200px;
+  object-position: center;
+  object-fit: cover;
+}

@@ -1,0 +1,14 @@
+<div class="full-component">
+  <h1>Daily pet facts - Love!</h1>
+
+  <div class="all-animals">
+    <app-content-animal [reverseOrder]="catData['reverseOrder']" [title]="catData['title']"
+                        [imgSrc]="catData['imgSrc']" [passages]="catData['passages']">>
+    </app-content-animal>
+
+    <app-content-animal [reverseOrder]="dogData['reverseOrder']" [title]="dogData['title']"
+                        [imgSrc]="dogData['imgSrc']" [passages]="dogData['passages']">>
+    </app-content-animal>
+  </div>
+
+</div>
