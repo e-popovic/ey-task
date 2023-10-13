@@ -1,0 +1,46 @@
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.image img {
+  display: block;
+}
+
+.image img:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  .image-grid {
+    padding: 0 165px;
+  }
+
+  .image {
+    flex: 0 0 255px;
+  }
+
+  .image img {
+    width: 255px;
+  }
+}
+
+/* Portrait tablet and down */
+@media (max-width: 767px) {
+    .image-grid {
+      padding: 0;
+    }
+
+    .image {
+      flex: 0 0 157px;
+    }
+
+    .image img {
+      width: 157px;
+    }
+
+}

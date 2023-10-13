@@ -1,0 +1,48 @@
+* {
+  background: #FFFFFF;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 200;
+  font-size: 52px;
+  line-height: 61px;
+  letter-spacing: 0.2311110943555832px;
+}
+
+.gallery-components {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  .full-component {
+    padding: 74px 0 100px;
+  }
+
+  h1 {
+    margin: 0 0 74px;
+  }
+
+  .gallery-components {
+    gap: 107px;
+  }
+
+}
+
+/* Portrait tablet and down */
+@media (max-width: 767px) {
+  .full-component {
+    padding: 40px 15px 75px;
+  }
+
+  h1 {
+    margin: 0 0 38px;
+  }
+
+  .gallery-components {
+      gap: 75px;
+    }
+}
+

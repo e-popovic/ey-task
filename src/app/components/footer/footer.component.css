@@ -1,0 +1,44 @@
+* {
+  background: #1D1D1D;
+  color: #FFF;
+}
+
+.full-component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.copyright {
+  color: #FFF;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.071px;
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  .full-component {
+    padding: 77px 0 80px;
+  }
+
+  .copyright {
+    line-height: 28px;
+    margin: 0 260px;
+  }
+}
+
+/* Portrait tablet and down */
+@media (max-width: 767px) {
+  .full-component {
+    padding: 36px 0 42px;
+    gap: 30px;
+  }
+
+  .copyright {
+    line-height: 23px;
+    margin: 0 15px;
+  }
+}

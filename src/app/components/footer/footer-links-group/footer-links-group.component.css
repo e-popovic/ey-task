@@ -1,0 +1,47 @@
+* {
+  color: #FFFFFF;
+}
+
+h1 {
+  font-weight: 700;
+  margin: 0 0 24px;
+}
+
+.footer-link, h1 {
+    font-size: 18px;
+    text-align: center;
+}
+
+.footer-link {
+  margin: 0 0 4px;
+}
+
+.footer-link:hover {
+   text-decoration: underline;
+   cursor: pointer;
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  .full-component {
+    height: 255px;
+    width: 350px;
+  }
+
+  .footer-link, h1 {
+      line-height: 36px;
+      letter-spacing: 0.08000001311302185px;
+  }
+}
+
+/* Portrait tablet and down */
+@media (max-width: 767px) {
+  .full-component {
+    width: 345px;
+  }
+
+  .footer-link, h1 {
+    line-height: 35px;
+    letter-spacing: 0.07885715365409851px;
+  }
+}
