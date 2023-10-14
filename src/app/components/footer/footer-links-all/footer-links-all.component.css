@@ -4,15 +4,15 @@
 }
 
 /* Desktop */
-@media (min-width: 768px) {
+@media (min-width: 960px) {
     .full-component {
       gap: 30px;
       flex-direction: row;
     }
 }
 
-/* Portrait tablet and down */
-@media (max-width: 767px) {
+/* Small desktop and down */
+@media (max-width: 959px) {
     .full-component {
       gap: 40px;
       flex-direction: column;

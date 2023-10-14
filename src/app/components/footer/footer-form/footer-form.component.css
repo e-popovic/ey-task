@@ -24,6 +24,21 @@ input, select {
   font-size: 16px;
 }
 
+
+/* Desktop screen, larger */
+@media (max-width: 1280px) {
+  .inputs {
+    width: 40%;
+  }
+}
+
+/* Desktop screen, smaller */
+@media (max-width: 1279px) {
+  .inputs {
+    width: 70%;
+  }
+}
+
 /* Desktop */
 @media (min-width: 768px) {
   .full-component {
@@ -32,10 +47,6 @@ input, select {
 
   .full-component {
     gap: 16px;
-  }
-
-  .inputs {
-    width: 40%;
   }
 
   .inputs>div {
@@ -53,11 +64,14 @@ input, select {
     gap: 12px;
   }
 
-  .inputs {
-    width: 100%;
-  }
-
   .inputs>div {
     margin-bottom:16px;
+  }
+}
+
+/* Phone screen */
+@media (max-width: 600px) {
+  .inputs {
+    width: 100%;
   }
 }
