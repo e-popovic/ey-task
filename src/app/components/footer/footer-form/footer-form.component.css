@@ -26,7 +26,7 @@ input, select {
 
 
 /* Desktop screen, larger */
-@media (max-width: 1280px) {
+@media (min-width: 1280px) {
   .inputs {
     width: 40%;
   }
