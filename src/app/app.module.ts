@@ -16,6 +16,7 @@ import { FooterFormComponent } from './components/footer/footer-form/footer-form
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatButtonModule} from '@angular/material/button';
 import {MatDialogModule} from '@angular/material/dialog';
+import { NgxCookieConsentModule } from '@localia/ngx-cookie-consent';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import {MatDialogModule} from '@angular/material/dialog';
     FormsModule,
     ReactiveFormsModule,
     MatButtonModule,
-    MatDialogModule
+    MatDialogModule,
+    NgxCookieConsentModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
