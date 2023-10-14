@@ -1,5 +1,5 @@
 <div class="image-grid">
   <div class="image" *ngFor="let imageUrl of imageUrls">
-    <img src='{{ "../../../../assets/" + imageUrl }}' alt="Gallery image">
+    <img src='{{ "../../../../assets/" + imageUrl }}' alt="Gallery image" (click)="openDialog(imageUrl)">
   </div>
 </div>

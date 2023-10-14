@@ -1,3 +1,15 @@
-ng-image-slider {
-  width: 100%;
+
+
+/* Desktop */
+@media (min-width: 768px) {
+  .carousel {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+  }
+}
+
+/* Portrait tablet and down */
+@media (max-width: 767px) {
+
 }

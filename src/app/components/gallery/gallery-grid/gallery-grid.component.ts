@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Inject } from '@angular/core';
+import {MatDialog, MatDialogModule, MAT_DIALOG_DATA} from '@angular/material/dialog';
 
 @Component({
   selector: 'app-gallery-grid',
@@ -6,6 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./gallery-grid.component.css']
 })
 export class GalleryGridComponent {
+
+  constructor(public dialog: MatDialog) { }
 
   imageUrls = [
       'img_1.png',
@@ -17,4 +20,20 @@ export class GalleryGridComponent {
       'img_7.png',
       'img_8.png'
     ];
+
+  openDialog(imageUrl: string) {
+    this.dialog.open(ImageDialog, {
+      data: imageUrl,
+    });
+  }
+}
+
+@Component({
+  selector: 'app-image-dialog',
+  templateUrl: 'image-dialog.html',
+  standalone: true,
+  imports: [MatDialogModule],
+})
+export class ImageDialog {
+  constructor(@Inject(MAT_DIALOG_DATA) public data: String) {}
 }

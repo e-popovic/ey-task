@@ -31,9 +31,7 @@ export class FooterFormComponent implements OnInit {
       }
 
       // display message on success
-      // alert('Login successful!');
-
-      this.dialog.open(DialogElementsExampleDialog);
+      this.dialog.open(SuccessDialog);
   }
 
 }
@@ -44,4 +42,4 @@ export class FooterFormComponent implements OnInit {
   standalone: true,
   imports: [MatDialogModule, MatButtonModule],
 })
-export class DialogElementsExampleDialog {}
+export class SuccessDialog {}

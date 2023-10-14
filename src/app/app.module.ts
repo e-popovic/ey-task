@@ -9,7 +9,6 @@ import { ContentAnimalComponent } from './components/content/content-animal/cont
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { GalleryGridComponent } from './components/gallery/gallery-grid/gallery-grid.component';
 import { GallerySliderComponent } from './components/gallery/gallery-slider/gallery-slider.component';
-import { NgImageSliderModule } from 'ng-image-slider';
 import { FooterComponent } from './components/footer/footer.component';
 import { FooterLinksGroupComponent } from './components/footer/footer-links-group/footer-links-group.component';
 import { FooterLinksAllComponent } from './components/footer/footer-links-all/footer-links-all.component';
@@ -35,7 +34,6 @@ import {MatDialogModule} from '@angular/material/dialog';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    NgImageSliderModule,
     FormsModule,
     ReactiveFormsModule,
     MatButtonModule,
