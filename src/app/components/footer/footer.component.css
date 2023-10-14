@@ -3,7 +3,7 @@
   color: #FFF;
 }
 
-.full-component {
+.company-info {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,7 +20,7 @@
 
 /* Desktop */
 @media (min-width: 768px) {
-  .full-component {
+  .company-info {
     padding: 77px 0 80px;
   }
 
@@ -32,7 +32,7 @@
 
 /* Portrait tablet and down */
 @media (max-width: 767px) {
-  .full-component {
+  .company-info {
     padding: 36px 0 42px;
     gap: 30px;
   }

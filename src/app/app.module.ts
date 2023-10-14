@@ -14,6 +14,9 @@ import { FooterComponent } from './components/footer/footer.component';
 import { FooterLinksGroupComponent } from './components/footer/footer-links-group/footer-links-group.component';
 import { FooterLinksAllComponent } from './components/footer/footer-links-all/footer-links-all.component';
 import { FooterFormComponent } from './components/footer/footer-form/footer-form.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {MatButtonModule} from '@angular/material/button';
+import {MatDialogModule} from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -32,7 +35,11 @@ import { FooterFormComponent } from './components/footer/footer-form/footer-form
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    NgImageSliderModule
+    NgImageSliderModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatButtonModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

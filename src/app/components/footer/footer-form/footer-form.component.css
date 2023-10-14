@@ -1,0 +1,63 @@
+.full-component {
+  background: #F7F7F7;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.invalid-feedback {
+  margin-top: 4px;
+}
+
+button {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0.08000001311302185px;
+  color: #FFF;
+  padding: 4px 24px;
+}
+
+input, select {
+  height: 48px;
+  font-size: 16px;
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  .full-component {
+    padding: 77px 165px 80px;
+  }
+
+  .full-component {
+    gap: 16px;
+  }
+
+  .inputs {
+    width: 40%;
+  }
+
+  .inputs>div {
+    margin-bottom:24px;
+  }
+}
+
+/* Portrait tablet and down */
+@media (max-width: 767px) {
+  .full-component {
+    padding: 36px 15px 42px;
+  }
+
+  .full-component {
+    gap: 12px;
+  }
+
+  .inputs {
+    width: 100%;
+  }
+
+  .inputs>div {
+    margin-bottom:16px;
+  }
+}
